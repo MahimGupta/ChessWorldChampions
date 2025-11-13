@@ -1,0 +1,23 @@
+champions.jsonPlace this in /data/champions.json. It's an array of objects; edit and redeploy for updates. Usernames are for modern players (null for historical ones).json
+
+[
+  {"id": 18, "name": "Dommaraju Gukesh", "dob": "2006-05-29", "chess_com": "GukeshDommaraju", "lichess": "guki1124"},
+  {"id": 17, "name": "Ding Liren", "dob": "1992-10-24", "chess_com": "Chefshouse", "lichess": null},
+  {"id": 16, "name": "Magnus Carlsen", "dob": "1990-11-30", "chess_com": "MagnusCarlsen", "lichess": "DrNykterstein"},
+  {"id": 15, "name": "Viswanathan Anand", "dob": "1969-12-11", "chess_com": "TheVish", "lichess": "Anand"},
+  {"id": 14, "name": "Vladimir Kramnik", "dob": "1975-06-25", "chess_com": "VladimirKramnik", "lichess": null},
+  {"id": 13, "name": "Garry Kasparov", "dob": "1963-04-13", "chess_com": "GarryKasparov", "lichess": null},
+  {"id": 12, "name": "Anatoly Karpov", "dob": "1951-05-23", "chess_com": null, "lichess": null},
+  {"id": 11, "name": "Bobby Fischer", "dob": "1943-03-09", "chess_com": null, "lichess": null},
+  {"id": 10, "name": "Boris Spassky", "dob": "1937-01-30", "chess_com": null, "lichess": null},
+  {"id": 9, "name": "Tigran Petrosian", "dob": "1929-06-17", "chess_com": null, "lichess": null},
+  {"id": 8, "name": "Mikhail Tal", "dob": "1936-11-09", "chess_com": null, "lichess": null},
+  {"id": 7, "name": "Vasily Smyslov", "dob": "1921-03-24", "chess_com": null, "lichess": null},
+  {"id": 6, "name": "Mikhail Botvinnik", "dob": "1911-08-17", "chess_com": null, "lichess": null},
+  {"id": 5, "name": "Max Euwe", "dob": "1901-05-20", "chess_com": null, "lichess": null},
+  {"id": 4, "name": "Alexander Alekhine", "dob": "1892-10-31", "chess_com": null, "lichess": null},
+  {"id": 3, "name": "José Raúl Capablanca", "dob": "1888-11-19", "chess_com": null, "lichess": null},
+  {"id": 2, "name": "Emanuel Lasker", "dob": "1868-12-24", "chess_com": null, "lichess": null},
+  {"id": 1, "name": "Wilhelm Steinitz", "dob": "1836-05-14", "chess_com": null, "lichess": null}
+]
+

@@ -1,0 +1,37 @@
+Open Source APIs and LibrariesAll are free, open, and client-side compatible. Install via NPM in Replit. Below are purposes, key endpoints/examples, requirements, and official docs links.APIsLichess API (Free, open-source; for player stats, games):Purpose: Fetch stats (games, wins), recent PGNs.
+Requirements: No key; rate: 60/min. Handle ND-JSON.
+Endpoints: /api/user/{username} (stats); /api/games/user/{username}?max=10 (games).
+JS Example: fetch('https://lichess.org/api/user/GukeshDommaraju').then(res => res.json()).
+Docs: https://lichess.org/api (Official reference); GitHub: https://github.com/lichess-org/api
+Chess.com Public API (Free; for profiles, games):Purpose: Player profiles (games count, wins), monthly game archives.
+Requirements: No key; include contact header if scripting heavily.
+Endpoints: /pub/player/{username} (profile); /pub/player/{username}/games/{yyyy}/{mm} (games).
+JS Example: fetch('https://api.chess.com/pub/player/MagnusCarlsen').then(res => res.json()).
+Docs: https://support.chess.com/en/articles/9650547-published-data-api (Official help center); Postman: https://www.postman.com/team-zouhair/chess-analyse/documentation/q50kqzo/chess-com-api
+Chess-API.com (Free REST, Stockfish-based; for analysis):Purpose: Analyze FEN/PGN for best moves.
+Requirements: No key; depth up to 18.
+Endpoints: POST /v1 with {fen: '...', depth: 15}.
+JS Example: fetch('https://chess-api.com/v1', {method: 'POST', body: JSON.stringify({fen, depth: 12})}).
+Docs: https://chess-api.com/ (Official site with examples)
+Libraries (NPM)react-chessboard:Purpose: Interactive chessboard UI.
+Install: npm i react-chessboard.
+Example: <Chessboard position={fen} />.
+Docs: https://www.npmjs.com/package/react-chessboard (NPM page); Demo: https://react-chessboard.vercel.app/
+chess.js:Purpose: Chess logic (PGN/FEN handling, validation).
+Install: npm i chess.js.
+Example: const chess = new Chess(); chess.load_pgn(pgn);.
+Docs: https://www.npmjs.com/package/chess.js (NPM page); GitHub: https://github.com/jhlywa/chess.js
+tsParticles:Purpose: Particle effects for stars/galaxy background.
+Install: npm i tsparticles.
+Example: <Particles params={{particles: {number: {value: 100}}}} />.
+Docs: https://www.npmjs.com/package/tsparticles (NPM page); Official: https://particles.js.org/docs/
+framer-motion:Purpose: Declarative animations (e.g., glows, scales).
+Install: npm i framer-motion.
+Example: <motion.div animate={{scale: 1.1}} />.
+Docs: https://www.npmjs.com/package/framer-motion (NPM page); Official: https://motion.dev/docs
+react-spring:Purpose: Physics-based animations (e.g., orbits, springs).
+Install: npm i react-spring.
+Example: useSpring({from: {opacity: 0}, to: {opacity: 1}}).
+Docs: https://www.npmjs.com/package/react-spring (NPM page); Official: https://www.react-spring.dev/docs
+Other optional: react-router-dom (routing), react-autosuggest (search), react-beautiful-dnd (drag-sort), Stockfish.js (local analysis fallback; install npm i stockfish).
+

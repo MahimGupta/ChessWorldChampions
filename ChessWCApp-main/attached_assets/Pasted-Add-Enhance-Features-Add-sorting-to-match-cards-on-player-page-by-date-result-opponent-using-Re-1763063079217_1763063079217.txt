@@ -1,0 +1,51 @@
+Add/Enhance Features:"Add sorting to match cards on player page (by date, result, opponent) using React state. Include basic stats on match cards like game length, opening name from chess.js."
+"Integrate search: Use fuzzy matching for player names/ID; highlight results in the home grid using react-autosuggest."
+"For analysis, use Stockfish.js for client-side eval if Chess-API.com fails; show move-by-move walkthrough with comments on best moves."
+"Add infinite scroll for loading more games on player pages via API."
+"Implement dark mode toggle with space variants (deep space vs. nebula) using CSS variables and localStorage."
+
+Theme and UI Refinements:"Enhance space theme: Add neon glow to player/match cards on hover; configure tsParticles for galaxy effect with twinkling stars."
+"Make player cards interactive: Orbiting stats icons (e.g., wins as stars); use Orbitron for headers."
+"Improve responsiveness: Grid layout for cards on desktop, stack on mobile; ensure boards resize."
+"Add holographic tooltips for stats using react-tooltip with custom CSS glows."
+
+Bug Fixes and Optimizations:"Fix CORS in API calls: Use proxy if needed for Chess.com/Lichess, or confirm endpoints support client-side."
+"Optimize fetches: Cache recent games locally with useEffect; throttle analysis requests."
+"Handle null usernames: Show message like 'No online account available' for older champions."
+"Add error handling for API failures; fallback to static JSON data."
+
+Animations and Particles:"Add hover glow and scale to cards using framer-motion (scale 1.1x with pulse)."
+"Implement orbital entrance animations for player cards on load using react-spring."
+"Add particle bursts on game events (e.g., win) using tsParticles emitters."
+"Create vortex loader for API fetches with tsParticles swirls."
+
+Layouts and StructuresGalactic Grid for Player Cards: Responsive masonry grid (current top, older below like star trail). Mobile: Stack with swipes. Impl: CSS Grid/react-masonry.
+Orbital Timeline View: Circular timeline (champions orbiting central icon). Impl: SVG paths with react-circular-progressbar.
+Layered Modal Overlays: Semi-transparent modals for pages (z-index, blur). Impl: react-modal.
+Infinite Scroll for Match Cards: Lazy-load games. Impl: react-infinite-scroll-component.
+
+Stylings and Visual ThemesNeon Gradient Borders: Glowing card borders (box-shadow). Impl: CSS gradients.
+Starry Nebula Backgrounds: Layered with particles/nebulae. Impl: tsParticles + CSS.
+Galactic Typography: Orbitron headers with glows. Impl: Google Fonts.
+Piece-Inspired Icons: SVGs for stats (king for wins). Impl: react-icons.
+Dark Mode Toggle: Space variants via localStorage. Impl: CSS variables.
+
+Animations and TransitionsHover Glow and Scale: Cards pulse/scale. Impl: framer-motion.
+Orbital Entrance: Cards orbit in on load. Impl: react-spring.
+Particle Bursts: Explode on wins/analysis. Impl: tsParticles.
+Hyperspace Warp: Page transitions stretch particles. Impl: react-transition-group.
+Chessboard Piece Trails: Glowing trails on moves. Impl: Canvas overlay.
+Floating Stats: Rise like stars. Impl: framer-motion stagger.
+
+Particles and EffectsInteractive Magnetic Particles: Mouse-attract stars. Impl: tsParticles interactivity.
+Vortex Swirls for Loading: Swirling loader. Impl: tsParticles presets.
+Plasma Glow Overlays: Energy fields on boards. Impl: Canvas noise.
+Starfield Parallax: Multi-layer scroll. Impl: react-parallax + tsParticles.
+Emoji/Icon Particles: Chess emojis on events. Impl: tsParticles custom shapes.
+
+Dynamic and Interactive ElementsSortable Match Cards: Drag-drop. Impl: react-beautiful-dnd.
+3D Chessboard Tilt: Mouse-tilt perspective. Impl: react-three-fiber.
+Search with Autocomplete: Fuzzy dropdowns. Impl: react-autosuggest.
+Progress Rings for Stats: Neon circles. Impl: react-circular-progressbar.
+Tooltip Holograms: Floating glow panels. Impl: react-tooltip.
+Voice-Activated Navigation: "Show Carlsen" via Web Speech API. Impl: Browser hook.
